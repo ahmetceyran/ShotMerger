@@ -22,6 +22,11 @@ public class collectableBox : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(shotCount < 1)
+        {
+            shotCount = 1;
+        }
+
         if (isActive == true)
         {
             if (this.gameObject.tag == "x2")
@@ -64,7 +69,7 @@ public class collectableBox : MonoBehaviour
     {
         if (other.gameObject.tag == "barrel" || other.gameObject.tag == "obstacle")
         {
-            if (this.gameObject.tag == "+1" && shotCount > 1)
+            if (this.gameObject.tag == "+1")
             {
                 shotCount -= 1;
             }
