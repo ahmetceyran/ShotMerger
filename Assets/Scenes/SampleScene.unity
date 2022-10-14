@@ -4931,7 +4931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.079241976, y: -0, z: -0, w: 0.99685544}
-  m_LocalPosition: {x: 0.0628548, y: 2.079269, z: -11.421665}
+  m_LocalPosition: {x: 0.062854804, y: 2.079269, z: -11.421665}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8751,7 +8751,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1628822651}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0.0628548, y: 6.25, z: -8}
+  m_LocalPosition: {x: 0.062854804, y: 6.25, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11911,6 +11911,14 @@ PrefabInstance:
       value: 'gun '
       objectReference: {fileID: 0}
     - target: {fileID: 4009067971572452767, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00157137
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009067971572452767, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4009067971572452767, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
       objectReference: {fileID: 0}
@@ -11948,7 +11956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240993504205527675, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_Size.z
-      value: 0.055534948
+      value: 0.047517076
       objectReference: {fileID: 0}
     - target: {fileID: 4240993504205527675, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_Center.x
@@ -11956,7 +11964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240993504205527675, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_Center.z
-      value: 0.007381234
+      value: 0.0033722953
       objectReference: {fileID: 0}
     - target: {fileID: 4418506645993850950, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_RootOrder

@@ -62,9 +62,9 @@ public class collectableBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "barrel")
+        if (other.gameObject.tag == "barrel" || other.gameObject.tag == "obstacle")
         {
-            if (this.gameObject.tag == "+1")
+            if (this.gameObject.tag == "+1" && shotCount > 1)
             {
                 shotCount -= 1;
             }
@@ -86,10 +86,6 @@ public class collectableBox : MonoBehaviour
             }
             Destroy(this.gameObject);
             
-        }
-        if (other.gameObject.tag == "obstacle")
-        {
-            Destroy(this.gameObject);
         }
 
         if (yapisik == false)
