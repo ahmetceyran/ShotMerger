@@ -11786,6 +11786,22 @@ MonoBehaviour:
   bullet: {fileID: 3105128264459788666, guid: ddec999cf0c904b1b9a9352d8ada0d0e, type: 3}
   bulletSpeed: 1000
   losePanel: {fileID: 1066286106}
+--- !u!111 &6083326640908104152
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69718277}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 19878b25c592dd3429c097a0b962bf8b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 19878b25c592dd3429c097a0b962bf8b, type: 2}
+  m_WrapMode: 1
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!4 &7048351230531096823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5968286330741133271, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
@@ -11956,7 +11972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240993504205527675, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_Size.z
-      value: 0.047517076
+      value: 0.055534948
       objectReference: {fileID: 0}
     - target: {fileID: 4240993504205527675, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_Center.x
@@ -11964,7 +11980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4240993504205527675, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_Center.z
-      value: 0.0033722953
+      value: 0.007381234
       objectReference: {fileID: 0}
     - target: {fileID: 4418506645993850950, guid: 7f18b179103fb42eebff44f6f27bf542, type: 3}
       propertyPath: m_RootOrder
