@@ -21,7 +21,6 @@ public class gunScript : MonoBehaviour
            
         }
 
-       
     }
 
     IEnumerator AnimWait()

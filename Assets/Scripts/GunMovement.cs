@@ -64,6 +64,10 @@ public class GunMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.gameObject.tag == "obstacle")
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .5f);
+        }
         if (other.gameObject.tag == "2X")
         {
             speed = speed + 1;
