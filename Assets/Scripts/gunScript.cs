@@ -20,7 +20,7 @@ public class gunScript : MonoBehaviour
             StartCoroutine(AnimWait());
            
         }
-
+        
     }
 
     IEnumerator AnimWait()
