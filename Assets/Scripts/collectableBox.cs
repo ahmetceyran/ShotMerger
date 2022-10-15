@@ -11,7 +11,7 @@ public class collectableBox : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     private bool yapisik;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         isActive = false;
@@ -19,16 +19,19 @@ public class collectableBox : MonoBehaviour
       
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+        //Mermi sayis birden az olamaz
         if(shotCount < 1)
         {
             shotCount = 1;
         }
 
+        //Yapisik kutu yoksa tekli atis devam eder
         if (isActive == true)
         {
+            //toplanan kutuya gore atis yapilmasi ve mermi sayisinin guncellenmesi
             if (this.gameObject.tag == "x2")
             {
                 InvokeRepeating("Shot2x", 0.001f, .5f);
@@ -67,8 +70,10 @@ public class collectableBox : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //varil yada engele carpilmasinin kontrol edilmesi
         if (other.gameObject.tag == "barrel" || other.gameObject.tag == "obstacle")
         {
+            //carpan kutuya gore shotCount azaltilmasi ve kutunun yok edilmesi
             if (this.gameObject.tag == "+1")
             {
                 shotCount -= 1;
@@ -93,6 +98,7 @@ public class collectableBox : MonoBehaviour
             
         }
 
+        //Kutu toplanmasi ve yeni pozisyon atamasi
         if (yapisik == false)
         {
             if (other.gameObject.tag == "gun")
@@ -145,6 +151,8 @@ public class collectableBox : MonoBehaviour
        
        
     }
+
+    //toplanan kutuya gore mermi cikislarini arttirma ve mermi menzili belirtme
     void Shot()
     {
         Vector3 bulletPos = transform.position + new Vector3(0, 0, .25f);

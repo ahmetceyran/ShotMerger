@@ -12,13 +12,13 @@ public class GunMovement : MonoBehaviour
     private float speed = 7;
     private float sensitivityMultiplier = 0.01f;
     private float finalTouchX;
-    [SerializeField] private float xBound;
+    private float xBound = 4.25f;
     [SerializeField] private GameObject winPanel;
     [SerializeField] private TextMeshPro tmp;
 
     [SerializeField] private GameObject bullet;
     private GameObject cloneBullet;
-    [SerializeField] private float bulletSpeed;
+    private float bulletSpeed = 1000;
     [SerializeField] private GameObject losePanel;
     float time,timeDelay;
 
@@ -30,18 +30,22 @@ public class GunMovement : MonoBehaviour
 
     void Update()
     {
+        //Kutu toplanmamissa saniyede bir atis yapmasi icin delay
         time = time + 1f * Time.deltaTime;
         if(time >= timeDelay)
         {
             time = 0f;
-             InvokeRepeating("Shot", 0.001f, 1);
+            InvokeRepeating("Shot", 0.001f, 1);
         }
 
+        //Saniyede atilan mermi sayisini gosterme
         tmp.text = "" +collectableBox.shotCount + "/sec";
-
+        
+        //ileri yonlu hareket
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
        
-
+        //Hareket icin yeni input sistemi
+        //Bilgisayarda kontrol icin mouse kullanildi
         if (Input.GetMouseButtonDown(0))
         {
             firstTouchPosition = Input.mousePosition;
@@ -64,10 +68,12 @@ public class GunMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //silah engele carparsa geri gitme
         if(other.gameObject.tag == "obstacle")
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - .5f);
         }
+        //finishte hızlanma
         if (other.gameObject.tag == "2X")
         {
             speed = speed + 1;
@@ -108,6 +114,8 @@ public class GunMovement : MonoBehaviour
 
     }
 
+    //Kutu toplanmamis ise tekli ates etme
+    //losePanel geldiginde atisin durmasi icin ekstra kontrol
     void Shot()
     {
         if(this.transform.childCount <= 6 && losePanel.activeInHierarchy == false)

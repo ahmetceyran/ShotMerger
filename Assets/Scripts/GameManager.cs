@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,12 +13,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
+        //Restart fonksiyonun cagrilmasi
         resButton.onClick.AddListener(Restart);
     }
 
     void Update()
     {
+        //panel aktif oldugunda silahin durmasi
         if(losePanel.activeInHierarchy)
         {
             gun.GetComponent<GunMovement>().enabled = false;
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+    //Restart butonu fonksiyonu
     void Restart()
     {
         losePanel.SetActive(false);

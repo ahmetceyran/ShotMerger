@@ -13,9 +13,9 @@ public class gunScript : MonoBehaviour
   
     private void OnTriggerEnter(Collider other)
     {
+        //Silah varile carptiginda silah parcalanma animasyonun oynamasi
         if (other.gameObject.tag == "barrel")
         {
-            //Time.timeScale = 0;
             this.GetComponent<Animation>().Play("loseAnim");
             StartCoroutine(AnimWait());
            
@@ -25,6 +25,7 @@ public class gunScript : MonoBehaviour
 
     IEnumerator AnimWait()
     {
+        //losePanel aktif olmasi icin animasyonun bitmesini bekleme
         yield return new WaitForSeconds(0.1f);
         
         losePanel.SetActive(true);

@@ -9,6 +9,8 @@ public class box : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
+        //Kutu toplanmasi ve ona gore mermi sayisinin artmasi
+        //Kutuya gore atis fonksiyonunun tekrarlanmasi 
         if (other.gameObject.tag == "+1")
         {
            transform.parent = other.transform;

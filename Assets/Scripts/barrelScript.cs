@@ -14,7 +14,8 @@ public class barrelScript : MonoBehaviour
      void Update()
     {
         tM.text = ""+can;
-
+        
+        //Varilin olmesi
         if (can <= 0)
         {
             Instantiate(dieEffect, transform.position, Quaternion.identity);
@@ -24,6 +25,7 @@ public class barrelScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Varile mermi temasi
         if (other.gameObject.tag == "bullet")
         {
             can--;
