@@ -8,13 +8,16 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private Button resButton;
     [SerializeField] private GameObject losePanel;
+    [SerializeField] private Button nextButton;
+    [SerializeField] private GameObject winPanel;
     [SerializeField] private GameObject gun;
 
 
     void Start()
     {
-        //Restart fonksiyonun cagrilmasi
+        //Restart ve NextLevel fonksiyonun cagrilmasi
         resButton.onClick.AddListener(Restart);
+        nextButton.onClick.AddListener(NextLevel);
     }
 
     void Update()
@@ -37,4 +40,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
+    void NextLevel()
+    {
+        winPanel.SetActive(false);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
