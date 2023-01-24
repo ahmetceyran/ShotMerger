@@ -11,7 +11,6 @@ public class collectableBox : MonoBehaviour
     [SerializeField] private float bulletSpeed;
     private bool yapisik;
 
-    
     void Start()
     {
         isActive = false;
@@ -113,7 +112,6 @@ public class collectableBox : MonoBehaviour
                 transform.parent = other.transform;
                 transform.localPosition = new Vector3(-.0115f, 0, .5f);
                 yapisik = true;
-
                 isActive = true;
             }
             if (other.gameObject.tag == "+2")
