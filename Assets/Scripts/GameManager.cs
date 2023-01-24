@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         //panel aktif oldugunda silahin durmasi
-        if(losePanel.activeInHierarchy)
+        if(losePanel.activeInHierarchy || winPanel.activeInHierarchy)
         {
             gun.GetComponent<GunMovement>().enabled = false;
         }

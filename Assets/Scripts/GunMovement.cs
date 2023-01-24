@@ -108,7 +108,7 @@ public class GunMovement : MonoBehaviour
         }
         if (other.gameObject.tag == "Finish")
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             winPanel.SetActive(true);
         }
 
