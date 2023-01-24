@@ -6823,10 +6823,10 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.9716981, g: 0.26125845, b: 0.6035148, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_HighlightedColor: {r: 0.9725491, g: 0.2627451, b: 0.6039216, a: 1}
+    m_PressedColor: {r: 0.9725491, g: 0.2627451, b: 0.6039216, a: 1}
+    m_SelectedColor: {r: 0.9725491, g: 0.2627451, b: 0.6039216, a: 1}
+    m_DisabledColor: {r: 0.9725491, g: 0.2627451, b: 0.6039216, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -9419,7 +9419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1732304069
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11780,11 +11780,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ba618668056e1d438f4d0cd4811e026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xBound: 4.25
   winPanel: {fileID: 1732304068}
   tmp: {fileID: 146419153}
   bullet: {fileID: 3105128264459788666, guid: ddec999cf0c904b1b9a9352d8ada0d0e, type: 3}
-  bulletSpeed: 1000
   losePanel: {fileID: 1066286106}
 --- !u!111 &6083326640908104152
 Animation:
