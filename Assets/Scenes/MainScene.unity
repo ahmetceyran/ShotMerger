@@ -400,6 +400,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 236709370}
     m_Modifications:
     - target: {fileID: 6113972964639260316, guid: ad0e63e0ee68d446a8d1f34c34204cdc, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
+    - target: {fileID: 6113972964639260316, guid: ad0e63e0ee68d446a8d1f34c34204cdc, type: 3}
       propertyPath: tmp
       value: 
       objectReference: {fileID: 0}
@@ -576,6 +580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: +2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8138569638687625833, guid: 6c651b823aa494936b26f0a9203dd68d, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
     - target: {fileID: 8138569638687625833, guid: 6c651b823aa494936b26f0a9203dd68d, type: 3}
       propertyPath: tmp
       value: 
@@ -1370,6 +1378,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43aecb0b0d46b48b3af40ce84c75697c, type: 2}
+    - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
     - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
       propertyPath: tmp
       value: 
@@ -4082,6 +4094,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 43aecb0b0d46b48b3af40ce84c75697c, type: 2}
     - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
+    - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
       propertyPath: tmp
       value: 
       objectReference: {fileID: 0}
@@ -5844,6 +5860,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 236709370}
     m_Modifications:
     - target: {fileID: 2032985266900947777, guid: 611705c97fab24c24998595f6caab3ef, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
+    - target: {fileID: 2032985266900947777, guid: 611705c97fab24c24998595f6caab3ef, type: 3}
       propertyPath: tmp
       value: 
       objectReference: {fileID: 0}
@@ -6466,6 +6486,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 43aecb0b0d46b48b3af40ce84c75697c, type: 2}
+    - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
     - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
       propertyPath: tmp
       value: 
@@ -11754,6 +11778,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 236709370}
     m_Modifications:
     - target: {fileID: 189147463106123964, guid: 6f226a286ed2145308429a1e70217448, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
+    - target: {fileID: 189147463106123964, guid: 6f226a286ed2145308429a1e70217448, type: 3}
       propertyPath: tmp
       value: 
       objectReference: {fileID: 0}
@@ -11899,6 +11927,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 43aecb0b0d46b48b3af40ce84c75697c, type: 2}
     - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
+    - target: {fileID: 8921881900333484395, guid: fa310c44f5b8e47fa9ce658e7b0ec7bb, type: 3}
       propertyPath: tmp
       value: 
       objectReference: {fileID: 0}
@@ -11911,6 +11943,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 236709370}
     m_Modifications:
+    - target: {fileID: 2032985266900947777, guid: 611705c97fab24c24998595f6caab3ef, type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 69718277}
     - target: {fileID: 2032985266900947777, guid: 611705c97fab24c24998595f6caab3ef, type: 3}
       propertyPath: tmp
       value: 
